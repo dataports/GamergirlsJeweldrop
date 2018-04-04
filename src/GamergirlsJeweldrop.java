@@ -5,7 +5,8 @@ import javax.swing.JFrame;
 
 
 public class GamergirlsJeweldrop extends JFrame{
-	   public GamergirlsJeweldrop() {
+	 //constructor  
+	public GamergirlsJeweldrop() {
 
 	        initUI();
 	    }
@@ -24,10 +25,10 @@ public class GamergirlsJeweldrop extends JFrame{
 	    
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		  EventQueue.invokeLater(new Runnable() {
+		  EventQueue.invokeLater(new Runnable() { //new thread of the program
 	            @Override
-	            public void run() {
-	            	GamergirlsJeweldrop ex = new GamergirlsJeweldrop();
+	            public void run() { //this is running inside of the thread
+	            	GamergirlsJeweldrop ex = new GamergirlsJeweldrop(); //create a new instance of the game board
 	            ex.setVisible(true);
 	            }
 	        });
